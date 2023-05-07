@@ -28,7 +28,7 @@
   width: 1100px;
   color: var(--text-color);
   filter: grayscale(100%);
-  transition: all 1s ease;
+  transition: all .5s ease;
   cursor: pointer;
 }
 
@@ -45,13 +45,13 @@
 
 .project:hover {
   filter: none;
-  transition: all 1s ease;
+  transition: all .5s ease;
 }
 
 .project:hover > .headline {
   background: var(--page-background);
   color: var(--text-color);
-  transition: all 1s ease;
+  transition: all .5s ease;
 }
 
 .projectClicked > .headline {
@@ -67,7 +67,7 @@
   border-top-right-radius: 2vh;
   border-top-left-radius: 2vh;
   color: var(--text-color-dark);
-  transition: all 1s ease;
+  transition: all .5s ease;
 }
 
 .headlineText {
@@ -85,7 +85,7 @@
   border-bottom-right-radius: 2vh;
   color: var(--text-color-dark);
   flex-direction: row;
-  transition: all 1s ease;
+  transition: all .5s ease;
 }
 
 .contentClicked {
@@ -153,12 +153,10 @@
 .contentBottomRow {
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .videoPlayer {
-  border: 0;
   border-radius: 15px;
   width: 80%;
-  aspect-ratio: 16 / 9;
 }
