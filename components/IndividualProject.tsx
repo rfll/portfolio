@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import styles from "@/styles/Projects.module.css";
 import { portfolioContext } from "@/providers/PortfolioProvider";
+import IndividualButton from "./IndividualButton";
 
 export default function IndividualProject(props: any) {
   // const { clickProject } = useContext(portfolioContext);
@@ -57,6 +58,7 @@ export default function IndividualProject(props: any) {
           </div>
         )}
       </div>
+      <IndividualButton />
     </div>
   );
 }
