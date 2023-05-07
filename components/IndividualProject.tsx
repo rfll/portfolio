@@ -11,9 +11,6 @@ export default function IndividualProject(props: any) {
     <div
       className={expand ? styles.projectClicked : styles.project}
       key={props.projectKeys.projectName}
-      onClick={() => {
-        setExpand(!expand);
-      }}
     >
       <div className={styles.headline}>
         <div className={styles.headlineText}>
@@ -58,7 +55,12 @@ export default function IndividualProject(props: any) {
           </div>
         )}
       </div>
-      <IndividualButton />
+      <IndividualButton
+        onClick={() => {
+          setExpand(!expand);
+        }}
+        expand={expand}
+      />
     </div>
   );
 }
