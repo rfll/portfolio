@@ -6,7 +6,7 @@ const portfolio = {
     tech: ['MongoDB', 'ExpressJS', 'ReactJS', 'NodeJS'],
     about: 'A web app that allows amateur basketball scouts to create a ranking of players entering the NBA.',
     image: '/drafted.png',
-    video: "https://www.loom.com/embed/cff1fe9f13cb4ad091d8bc8279264560"
+    video: "/Drafted App Demo.mp4"
   },
   {
     projectName: 'Parrot Perch',
