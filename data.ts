@@ -6,7 +6,7 @@ const portfolio = {
     tech: ['MongoDB', 'ExpressJS', 'ReactJS', 'NodeJS'],
     about: 'A web app that allows amateur basketball scouts to create a ranking of players entering the NBA.',
     image: '/drafted.png',
-    open: false
+    video: "https://www.loom.com/embed/cff1fe9f13cb4ad091d8bc8279264560"
   },
   {
     projectName: 'Parrot Perch',
@@ -15,7 +15,7 @@ const portfolio = {
     tech: ['PostgreSQL', 'ExpressJS', 'ReactJS', 'NodeJS'],
     about: 'A web app with interactive chat rooms where users can watch Twitch and Youtube streams, and play games.',
     image: '/parrot-perch.png',
-    open: false
+    video: null
   },
   {
     projectName: 'Interview Scheduler',
@@ -24,7 +24,7 @@ const portfolio = {
     tech: ['ReactJS', 'NodeJS', 'Axios'],
     about: 'A scheduling app that can create, edit, and delete interview appointments.',
     image: '/scheduler.png',
-    open: false
+    video: null
   },
   {
     projectName: 'Wiki-Maps',
@@ -33,7 +33,7 @@ const portfolio = {
     tech: ['PostgreSQL', 'ExpressJS', 'JavaScript', 'NodeJS'],
     about: 'A web app that allows users to create and save maps to display points of interest.',
     image: '/wiki-maps.png',
-    open: false
+    video: null
   }],
   bio: 'Full-Stack Web Developer with over 10 years of experience in project management. Looking to combine my passion for programming with skills in problem solving, creative thinking, collaboration, and communication.',
   descriptions: ['Web Developer.', 'Coffee Lover.', 'Basketball Fan.', 'Fun Guy.']
