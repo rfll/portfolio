@@ -32,7 +32,7 @@
   color: var(--text-color);
   letter-spacing: 3px;
   animation: fadeIn 2s ease forwards;
-  inline-size: 1000px;
+  inline-size: 1100px;
   overflow-wrap: break-word;
 }
 
@@ -43,7 +43,7 @@
   color: var(--text-color);
   letter-spacing: 3px;
   animation: fadeOut 2s ease forwards;
-  inline-size: 1000px;
+  inline-size: 1100px;
   overflow-wrap: break-word;
 }
 
