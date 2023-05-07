@@ -4,31 +4,18 @@
   align-items: center;
   background: var(--text-color);
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.projectAndNumber {
-  display: flex;
-  flex-direction: row;
-}
-
-.projectNumber {
-  margin: 20px;
-  color: var(--text-color-dark);
-  font-size: 32px;
-  font-weight: 450;
-  align-self: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .project {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   height: 340px;
   width: 1100px;
   color: var(--text-color);
   filter: grayscale(100%);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 
@@ -38,20 +25,19 @@
   height: 920px;
   width: 1100px;
   color: var(--text-color);
-  /* filter: grayscale(100%); */
   transition: all 1s ease;
   cursor: pointer;
 }
 
 .project:hover {
   filter: none;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .project:hover > .headline {
   background: var(--page-background);
   color: var(--text-color);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .projectClicked > .headline {
@@ -63,11 +49,11 @@
 .headline {
   display: flex;
   background: var(--project-header-background-color);
-  height: 80px; 
-  border-top-right-radius: 2vh;
-  border-top-left-radius: 2vh;
+  height: 80px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
   color: var(--text-color-dark);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .headlineText {
@@ -81,23 +67,24 @@
   display: flex;
   background: var(--project-content-background-color);
   height: 260px;
-  border-bottom-left-radius: 2vh;
-  border-bottom-right-radius: 2vh;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   color: var(--text-color-dark);
   flex-direction: row;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .contentClicked {
   display: flex;
   background: var(--project-content-background-color);
   height: 840px;
-  border-bottom-left-radius: 2vh;
-  border-bottom-right-radius: 2vh;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   color: var(--text-color-dark);
   flex-direction: row;
   transition: all 1s ease;
   flex-direction: column;
+  overflow: auto;
 }
 
 .contentTopRow {
@@ -130,10 +117,10 @@
 }
 
 .techStack {
- display: flex;
+  display: flex;
 }
 
-.tech  {
+.tech {
   height: 50px;
   margin-right: 10px;
 }
@@ -150,11 +137,15 @@
   font-weight: 300;
 }
 
+.contentBottomRow {
+  position: relative;
+}
+
 .videoPlayer {
-  border-radius: 15px;
+  border-radius: 25px;
   width: 900px;
   position: absolute;
-  margin: auto;
   left: 0;
   right: 0;
+  margin: auto;
 }
