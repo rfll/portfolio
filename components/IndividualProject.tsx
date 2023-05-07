@@ -49,11 +49,11 @@ export default function IndividualProject(props: any) {
         </div>
         {expand && (
           <div className={styles.contentBottomRow}>
-            <iframe
+            <video
               className={styles.videoPlayer}
               src={props.projectKeys.video}
-              allow="webkitallowfullscreen; mozallowfullscreen; fullscreen"
-            ></iframe>
+              controls={true}
+            ></video>
           </div>
         )}
       </div>
