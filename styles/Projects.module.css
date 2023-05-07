@@ -150,13 +150,11 @@
   font-weight: 300;
 }
 
-.contentBottomRow {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-}
-
 .videoPlayer {
   border-radius: 15px;
-  width: 80%;
+  width: 900px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
