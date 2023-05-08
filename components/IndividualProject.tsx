@@ -47,11 +47,25 @@ export default function IndividualProject(props: any) {
         </div>
         {expand && (
           <div className={styles.contentBottomRow}>
-            <video
-              className={styles.videoPlayer}
-              src={props.projectKeys.video}
-              controls={true}
-            ></video>
+            {props.projectKeys.video ? (
+              <video
+                className={styles.videoPlayer}
+                src={props.projectKeys.video}
+                controls={true}
+              ></video>
+            ) : (
+              <div className={styles.screenshotGrid}>
+                {props.projectKeys.screenshots.map((screenshots: string) => {
+                  return (
+                    <img
+                      className={styles.projectScreenshot}
+                      src={screenshots}
+                      alt="image"
+                    />
+                  );
+                })}
+              </div>
+            )}
           </div>
         )}
       </div>
