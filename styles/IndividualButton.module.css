@@ -15,6 +15,15 @@
 .buttonText {
   color: var(--text-color-dark);
   font-family: var(--portfolio-font);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 450;
+  position: relative;
+  bottom: 5px;
+}
+
+.buttonArrow {
+  width: 28px;
+  position: relative;
+  top: 7px;
+  left: 8px;
 }
