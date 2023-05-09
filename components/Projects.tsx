@@ -4,14 +4,22 @@ import { useState, useContext } from "react";
 import { portfolioContext } from "@/providers/PortfolioProvider";
 import IndividualProject from "./IndividualProject";
 
-export default function Projects(props: any) {
+export default function Projects() {
+  const projects = portfolio.projects;
+
   return (
     <div className={styles.projectList}>
-      {portfolio.projects.map((projectKeys, index) => {
+      {projects.map((projectKeys, index) => {
         return (
           <IndividualProject
-            projectKeys={projectKeys}
-            index={index}
+            projectName={projectKeys.projectName}
+            url={projectKeys.url}
+            techImages={projectKeys.techImages}
+            tech={projectKeys.tech}
+            about={projectKeys.about}
+            image={projectKeys.image}
+            video={projectKeys.video}
+            screenshots={projectKeys.screenshots}
             key={index}
           />
         );
