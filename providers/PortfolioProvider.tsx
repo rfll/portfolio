@@ -8,7 +8,22 @@ export type CustomProps = {
 
 const initialState: CustomProps = {
   clickProject : () => {},
-}; 
+};
+
+type portfolioProps = {
+  projects: [{
+    projectName: string,
+    url: string,
+    techImages: string[],
+    tech: string[],
+    about: string,
+    image: string,
+    video: string,
+    screenshots: string[]
+  }],
+  bio: string,
+  descriptions: string[]
+}
 
 export const portfolioContext = createContext(initialState);
 
