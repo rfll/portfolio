@@ -1,6 +1,5 @@
 import { useState, useContext } from "react";
 import styles from "@/styles/Projects.module.css";
-import { portfolioContext } from "@/providers/PortfolioProvider";
 import IndividualButton from "./IndividualButton";
 
 type ProjectProps = {
