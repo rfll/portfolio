@@ -20,7 +20,6 @@ export default function Intro() {
       if (document.visibilityState === "visible") {
         setActiveClass({ fade: "fadeIn" });
         setIndex((index + 1) % phraseArray.length);
-        // console.log('visible', activeClass.fade)
         return;
       }
     });
@@ -31,11 +30,7 @@ export default function Intro() {
       return;
     }
     const fadeTimer = setTimeout(() => {
-      // activeClass.fade === "fadeIn"
-      //   ? setActiveClass({fade : "fadeOut"})
-      //   : setActiveClass({fade : "fadeIn"});
       activeClass.fade === "fadeIn" && setActiveClass({ fade: "fadeOut" });
-      // console.log('fadeTimer', document.visibilityState)
     }, fadeMilliseconds);
   }, [activeClass]);
 
@@ -46,14 +41,12 @@ export default function Intro() {
     const arrayTimer = setTimeout(() => {
       setActiveClass({ fade: "fadeIn" });
       setIndex((index + 1) % phraseArray.length);
-      // console.log('arrayTimer', document.visibilityState)
     }, arrayMilliseconds);
   }, [index]);
 
   return (
     <main className={styles.main}>
       <div className={styles.profile}>
-        {/* <p className={styles.bio}>{portfolio.bio}</p> */}
         <div className={styles.name}></div>
         <div className={styles[activeClass.fade]}>{phraseArray[index]}</div>
       </div>
