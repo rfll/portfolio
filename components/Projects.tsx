@@ -1,15 +1,24 @@
 import portfolio from "@/data";
 import styles from "@/styles/Projects.module.css";
-import { useState, useContext } from "react";
-import { portfolioContext } from "@/providers/PortfolioProvider";
 import IndividualProject from "./IndividualProject";
+
+type ProjectProps = {
+  projectName: string;
+  url: string;
+  techImages: string[];
+  tech: string[];
+  about: string;
+  image: string;
+  video: string | null;
+  screenshots: string[];
+};
 
 export default function Projects() {
   const projects = portfolio.projects;
 
   return (
     <div className={styles.projectList}>
-      {projects.map((projectKeys, index) => {
+      {projects.map((projectKeys: ProjectProps, index: number) => {
         return (
           <IndividualProject
             projectName={projectKeys.projectName}
