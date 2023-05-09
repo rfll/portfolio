@@ -7,7 +7,7 @@ const portfolio = {
     about: 'Drafted provides basketball fans with a comprehensive resource to identify and rank their favorite players leading up to the NBA Draft. Users will have access to a database of hundreds of players, player stats, and scouting videos to assist.',
     image: 'draftedDocs/drafted.png',
     video: "draftedDocs/Drafted App Demo.mp4",
-    screenshots: null
+    screenshots: []
   },
   {
     projectName: 'Parrot Perch',
