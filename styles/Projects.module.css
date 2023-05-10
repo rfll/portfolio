@@ -8,6 +8,12 @@
   padding-bottom: 40px;
 }
 
+.projectAnchor {
+  position: relative; 
+  top: -72px; 
+  left: 0;
+}
+
 .project {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -42,8 +48,8 @@
   display: flex;
   background: var(--project-header-background-color);
   height: 80px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
   color: var(--text-color-dark);
   transition: all 0.5s ease;
 }
@@ -59,8 +65,8 @@
   display: flex;
   background: var(--project-content-background-color);
   height: 320px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
   color: var(--text-color-dark);
   flex-direction: row;
   transition: all 0.5s ease;
@@ -70,8 +76,8 @@
   display: flex;
   background: var(--project-content-background-color);
   height: 900px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
   color: var(--text-color-dark);
   flex-direction: row;
   transition: all 1s ease;
@@ -134,7 +140,7 @@
 }
 
 .videoPlayer {
-  border-radius: 25px;
+  border-radius: 15px;
   width: 900px;
   position: absolute;
   left: 0;
