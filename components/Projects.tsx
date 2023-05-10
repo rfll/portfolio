@@ -4,40 +4,24 @@ import IndividualProject from "./IndividualProject";
 import { useInView } from "react-intersection-observer";
 import { useContext } from "react";
 import { portfolioContext } from "@/providers/PortfolioProvider";
+import Project from "@/models/project";
 
-type ProjectProps = {
-  projectName: string;
-  url: string;
-  techImages: string[];
-  tech: string[];
-  about: string;
-  image: string;
-  video: string | null;
-  screenshots: string[];
-};
 
 export default function Projects() {
   const { setSelected } = useContext(portfolioContext);
   const [ref, inView] = useInView({
-    threshold: 0.376
-  })
+    threshold: 0.376,
+  });
   const projects = portfolio.projects;
 
-  inView ? setSelected("projects") : setSelected("off")
+  inView && setSelected("projects");
 
   return (
     <div className={styles.projectList} ref={ref} id="projectList">
-      {projects.map((projectKeys: ProjectProps, index: number) => {
+      {projects.map((project: Project, index: number) => {
         return (
           <IndividualProject
-            projectName={projectKeys.projectName}
-            url={projectKeys.url}
-            techImages={projectKeys.techImages}
-            tech={projectKeys.tech}
-            about={projectKeys.about}
-            image={projectKeys.image}
-            video={projectKeys.video}
-            screenshots={projectKeys.screenshots}
+            project={project}
             key={index}
           />
         );
