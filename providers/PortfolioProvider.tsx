@@ -27,7 +27,7 @@ type Props = {
 export default function PortfolioProvider({ children }: Props) {
   const [index, setIndex] = useState(0);
   const [activeClass, setActiveClass] = useState({ fade: "fadeIn" });
-  const [selected, setSelected] = useState("projects");
+  const [selected, setSelected] = useState("off");
 
   const phraseArray = portfolio.descriptions;
 
