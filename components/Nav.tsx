@@ -28,7 +28,11 @@ export default function Nav() {
           className={
             selected === "about" ? styles.navCatClicked : styles.navCat
           }
-          onClick={() => setSelected("about")}
+          onClick={() =>
+            document
+              .getElementById("aboutAnchor")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
         >
           About
         </div>
