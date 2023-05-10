@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function Nav() {
   const { selected, setSelected } = useContext(portfolioContext);
-  const [ref, inView] = useInView()
+  const [ref, inView] = useInView();
   const contactIcons = portfolio.contactIcons;
 
   return (
@@ -14,9 +14,7 @@ export default function Nav() {
       <div className={styles.leftNav}>
         <div
           className={
-            selected === "projects"
-              ? styles.projectsNavClicked
-              : styles.projectsNav
+            selected === "projects" ? styles.navCatClicked : styles.navCat
           }
           onClick={() => {
             document
@@ -28,7 +26,7 @@ export default function Nav() {
         </div>
         <div
           className={
-            selected === "about" ? styles.aboutNavClicked : styles.aboutNav
+            selected === "about" ? styles.navCatClicked : styles.navCat
           }
           onClick={() => setSelected("about")}
         >
