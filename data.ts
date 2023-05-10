@@ -40,7 +40,8 @@ const portfolio = {
     screenshots: ['wikiMapsDocs/wiki-maps.png']
   }],
   bio: 'Full-Stack Web Developer with over 10 years of experience in project management. Looking to combine my passion for programming with skills in problem solving, creative thinking, collaboration, and communication.',
-  descriptions: ['Web Developer.', 'Coffee Lover.', 'Basketball Fan.', 'Fun Guy.']
+  descriptions: ['Web Developer.', 'Coffee Lover.', 'Basketball Fan.', 'Fun Guy.'],
+  contactIcons: ['github.svg', 'linkedin.svg', 'mail.svg']
 }
 
 export default portfolio;
