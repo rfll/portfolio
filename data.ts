@@ -1,9 +1,11 @@
-const portfolio = {
+import Technologies from "./models/technologies";
+import Portfolio from "./models/portfolio";
+
+const portfolio: Portfolio = {
   projects: [{
     projectName: 'Drafted',
     url: 'https://github.com/rfll/mocks',
-    techImages: ['techImages/MongoDB.svg', 'techImages/ExpressJS.svg', 'techImages/React.svg', 'techImages/NodeJS.svg'],
-    tech: ['MongoDB', 'ExpressJS', 'ReactJS', 'NodeJS'],
+    technologies: [Technologies.MONGO_DB, Technologies.EXPRESS_JS, Technologies.REACT_JS, Technologies.NODE_JS],
     about: 'Drafted provides basketball fans with a comprehensive resource to identify and rank their favorite players leading up to the NBA Draft. Users will have access to a database of hundreds of players, player stats, and scouting videos to assist.',
     image: 'draftedDocs/drafted.png',
     video: "draftedDocs/Drafted App Demo.mp4",
@@ -12,8 +14,7 @@ const portfolio = {
   {
     projectName: 'Parrot Perch',
     url: 'https://github.com/rfll/parrot-perch',
-    techImages: ['techImages/PostgreSQL.svg', 'techImages/ExpressJS.svg', 'techImages/React.svg', 'techImages/NodeJS.svg'],
-    tech: ['PostgreSQL', 'ExpressJS', 'ReactJS', 'NodeJS'],
+    technologies: [Technologies.POSTGRESQL, Technologies.EXPRESS_JS, Technologies.REACT_JS, Technologies.NODE_JS],
     about: 'Parrot Perch is a single page application with interactive chat rooms where users can watch Twitch and Youtube streams, and play games.',
     image: 'parrotPerchDocs/parrot-perch.png',
     video: null,
@@ -22,8 +23,7 @@ const portfolio = {
   {
     projectName: 'Interview Scheduler',
     url: 'https://github.com/rfll/scheduler',
-    techImages: ['techImages/React.svg', 'techImages/NodeJS.svg', 'techImages/axios.png'],
-    tech: ['ReactJS', 'NodeJS', 'Axios'],
+    technologies: [Technologies.REACT_JS, Technologies.NODE_JS, Technologies.AXIOS],
     about: 'Interview Scheduler is a single page application where users can book interviews between Monday to Friday. Interviews are booked by typing in a student name and clicking on an interviewer from a list of available interviewers. Interviews can be edited, deleted and cancelled.',
     image: 'schedulerDocs/scheduler.png',
     video: null,
@@ -32,8 +32,7 @@ const portfolio = {
   {
     projectName: 'Wiki-Maps',
     url: 'https://github.com/rfll/wiki-maps',
-    techImages: ['techImages/PostgreSQL.svg', 'techImages/ExpressJS.svg', 'techImages/JavaScript.svg', 'techImages/NodeJS.svg'],
-    tech: ['PostgreSQL', 'ExpressJS', 'JavaScript', 'NodeJS'],
+    technologies: [Technologies.POSTGRESQL, Technologies.EXPRESS_JS, Technologies.JAVASCRIPT, Technologies.NODE_JS],
     about: 'A web app that allows users to create and save maps to display points of interest.',
     image: 'wikiMapsDocs/wiki-maps.png',
     video: null,
