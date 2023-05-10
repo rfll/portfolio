@@ -17,13 +17,13 @@
 .leftNav {
   display: flex;
   flex-direction: row;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   margin-left: 20px;
 }
 
 .header {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   color: var(--text-color);
   cursor: pointer;
@@ -35,24 +35,38 @@
   margin-right: 20px;
 }
 
-.projectsNav {
-  padding: 10px;
+.navCat {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
-.projectsNavClicked {
-  padding: 10px;
+.navCatClicked {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
   border-bottom: 2px solid var(--tertiary-color);
 }
 
 .aboutNav {
-  padding: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
 .aboutNavClicked {
-  padding: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
   border-bottom: 2px solid var(--tertiary-color);
 }
