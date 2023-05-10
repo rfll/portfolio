@@ -48,8 +48,8 @@
   display: flex;
   background: var(--project-header-background-color);
   height: 80px;
-  border-top-right-radius: 35px;
-  border-top-left-radius: 35px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   color: var(--text-color-dark);
   transition: all 0.5s ease;
 }
@@ -65,8 +65,8 @@
   display: flex;
   background: var(--project-content-background-color);
   height: 320px;
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   color: var(--text-color-dark);
   flex-direction: row;
   transition: all 0.5s ease;
@@ -76,8 +76,8 @@
   display: flex;
   background: var(--project-content-background-color);
   height: 900px;
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   color: var(--text-color-dark);
   flex-direction: row;
   transition: all 1s ease;
