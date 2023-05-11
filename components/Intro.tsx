@@ -8,7 +8,7 @@ export default function Intro() {
     portfolioContext
   );
   const [ref, inView] = useInView({
-    threshold: 0.8
+    threshold: 0.6
   });
 
   inView && setSelected("off");
