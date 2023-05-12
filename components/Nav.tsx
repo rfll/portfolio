@@ -3,11 +3,13 @@ import portfolio from "@/data";
 import { useContext, useState } from "react";
 import { portfolioContext } from "@/providers/PortfolioProvider";
 import { useInView } from "react-intersection-observer";
+import NavContactMethods from "./NavContactMethods";
+
+
 
 export default function Nav() {
   const { selected, setSelected } = useContext(portfolioContext);
-  const [ref, inView] = useInView();
-  const contactIcons = portfolio.contactIcons;
+  const contactMethods = portfolio.contactMethods;
 
   return (
     <div className={styles.nav}>
@@ -51,8 +53,8 @@ export default function Nav() {
         Ryan Fortin
       </div>
       <div className={styles.rightNav}>
-        {contactIcons.map((icons) => {
-          return <img className={styles.icons} src={icons} alt="contactIcon" />;
+        {contactMethods.map((icons) => {
+          return <NavContactMethods contactMethods={icons} />;
         })}
       </div>
     </div>
