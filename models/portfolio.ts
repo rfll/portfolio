@@ -6,6 +6,7 @@ type Portfolio = {
   bio: string;
   descriptions: string[];
   contactMethods: ContactMethods[];
+  photo: string;
 };
 
 export default Portfolio;
