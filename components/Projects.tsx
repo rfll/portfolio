@@ -7,6 +7,7 @@ import { portfolioContext } from "@/providers/PortfolioProvider";
 import Project from "@/models/project";
 
 export default function Projects() {
+  const { setSelected } = useContext(portfolioContext);
   const thresholdBaseline = 0.7;
   let threshold;
   if (typeof document !== "undefined") {
@@ -16,7 +17,6 @@ export default function Projects() {
       ((window.innerHeight * thresholdBaseline) / elemHeight) *
       thresholdBaseline;
   }
-  const { setSelected } = useContext(portfolioContext);
   const [ref, inView] = useInView({
     threshold: threshold,
   });
