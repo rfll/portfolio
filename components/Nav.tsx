@@ -53,8 +53,8 @@ export default function Nav() {
         Ryan Fortin
       </div>
       <div className={styles.rightNav}>
-        {contactMethods.map((icons) => {
-          return <NavContactMethods contactMethods={icons} />;
+        {contactMethods.map((contactMethods) => {
+          return <NavContactMethods contactMethods={contactMethods} />;
         })}
       </div>
     </div>
