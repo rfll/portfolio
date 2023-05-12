@@ -3,6 +3,7 @@ import styles from "@/styles/Projects.module.css";
 import IndividualButton from "./IndividualButton";
 import TechnologyRow from "./TechnologyRow";
 import Project from "@/models/project";
+import { useInView } from "react-intersection-observer";
 
 type ProjectProps = {
   project: Project;
@@ -10,11 +11,17 @@ type ProjectProps = {
 
 export default function IndividualProject(props: ProjectProps) {
   const [expand, setExpand] = useState(false);
+  const [ref, inView] = useInView({
+    threshold: 0,
+    rootMargin: "-50% 0% -50% 0%"
+  })
 
   return (
     <div
       className={expand ? styles.projectClicked : styles.project}
+      id={inView ? styles.projectInView : styles.project}
       key={props.project.projectName}
+      ref={ref}
     >
       <div className={styles.headline}>
         <div className={styles.headlineText}>{props.project.projectName}</div>
