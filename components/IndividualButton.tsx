@@ -1,4 +1,4 @@
-import styles from "@/styles/IndividualButton.module.css";
+import styles from "@/styles/Projects.module.css";
 
 type ButtonProps = {
   expand: boolean;
