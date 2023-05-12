@@ -87,6 +87,7 @@ const portfolio: Portfolio = {
     ContactMethods.LINKEDIN,
     ContactMethods.EMAIL,
   ],
+  photo: "/profile.jpg"
 };
 
 export default portfolio;
