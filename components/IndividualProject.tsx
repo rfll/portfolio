@@ -2,7 +2,6 @@ import { useState, useContext } from "react";
 import styles from "@/styles/Projects.module.css";
 import IndividualButton from "./IndividualButton";
 import TechnologyRow from "./TechnologyRow";
-import Technologies from "@/models/technologies";
 import Project from "@/models/project";
 
 type ProjectProps = {
