@@ -23,6 +23,25 @@
   transition: all 0.5s ease;
 }
 
+#project > .headline {
+  transition: all 1s ease;
+}
+
+#project > .button {
+  transition: all 1s ease;
+}
+
+#projectInView > .headline {
+  background: var(--page-background);
+  color: var(--text-color);
+  transition: all 1s ease;
+}
+
+#projectInView > .button {
+  background: var(--tertiary-color);
+  transition: all 1s ease;
+}
+
 .projectClicked {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -30,12 +49,7 @@
   width: 1100px;
   color: var(--text-color);
   transition: all 1s ease;
-}
-
-.project:hover > .headline {
-  background: var(--page-background);
-  color: var(--text-color);
-  transition: all 0.5s ease;
+  filter: none;
 }
 
 .projectClicked > .headline {
@@ -166,4 +180,34 @@
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.button {
+  height: 50px;
+  width: 200px;
+  background-color: var(--project-header-background-color);
+  border: 0;
+  position: relative;
+  bottom: 65px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buttonText {
+  color: var(--text-color-dark);
+  font-family: var(--portfolio-font);
+  font-size: 22px;
+  font-weight: 450;
+  position: relative;
+  bottom: 5px;
+}
+
+.buttonArrow {
+  width: 28px;
+  position: relative;
+  top: 7px;
+  left: 7px;
 }
