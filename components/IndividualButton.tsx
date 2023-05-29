@@ -2,8 +2,8 @@ import styles from "@/styles/Projects.module.css";
 
 type ButtonProps = {
   expand: boolean;
-  onClick: () => void
-}
+  onClick: () => void;
+};
 
 export default function IndividualButton(props: ButtonProps) {
   return (

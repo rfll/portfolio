@@ -5,8 +5,6 @@ import { portfolioContext } from "@/providers/PortfolioProvider";
 import { useInView } from "react-intersection-observer";
 import NavContactMethods from "./NavContactMethods";
 
-
-
 export default function Nav() {
   const { selected, setSelected } = useContext(portfolioContext);
   const contactMethods = portfolio.contactMethods;

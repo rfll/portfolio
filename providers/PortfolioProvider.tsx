@@ -3,18 +3,18 @@ import portfolio from "@/data";
 
 export type CustomProps = {
   index: number;
-  activeClass: { fade: string};
+  activeClass: { fade: string };
   phraseArray: string[];
   selected: string;
-  setSelected: (selected: string) => void
+  setSelected: (selected: string) => void;
 };
 
 const initialState: CustomProps = {
   index: 0,
-  activeClass: {fade: 'fadeIn'},
+  activeClass: { fade: "fadeIn" },
   phraseArray: portfolio.descriptions,
-  selected: 'off',
-  setSelected: () => {}
+  selected: "off",
+  setSelected: () => {},
 };
 
 export const portfolioContext = createContext(initialState);
@@ -74,7 +74,8 @@ export default function PortfolioProvider({ children }: Props) {
     index,
     activeClass,
     phraseArray,
-    selected, setSelected
+    selected,
+    setSelected,
   };
 
   return (

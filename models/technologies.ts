@@ -5,7 +5,7 @@ enum Technologies {
   REACT_JS = "REACT_JS",
   POSTGRESQL = "POSTGRESQL",
   AXIOS = "AXIOS",
-  JAVASCRIPT = "JAVASCRIPT"
+  JAVASCRIPT = "JAVASCRIPT",
 }
 
-export default Technologies
+export default Technologies;

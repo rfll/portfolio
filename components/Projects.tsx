@@ -22,7 +22,6 @@ export default function Projects() {
   });
   const projects = portfolio.projects;
 
-
   inView && setSelected("projects");
 
   return (

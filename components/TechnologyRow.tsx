@@ -26,7 +26,6 @@ const technologiesToNamesMapping = {
 };
 
 export default function TechnologyRow(props: TechnologyRowProps) {
-
   return (
     <div className={styles.techLogoLanguage} key={props.technology}>
       <img
