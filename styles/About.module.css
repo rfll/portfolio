@@ -1,5 +1,5 @@
 .about {
-  height: calc(100vh - 72px);
+  /* height: calc(100vh - 72px); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,8 +7,25 @@
 
 .photoBioContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  /* align-items: self-end; */
+}
+
+.bioText {
+  display: flex;
+  flex-direction: column;
+}
+
+.bioTitle {
+  color: var(--text-color);
+  font-family: var(--portfolio-font);
+  font-size: 84px;
+  font-weight: 400;
+  margin-top: 120px;
+  text-align: end;
+  z-index: 1;
+  margin-bottom: 10px;
 }
 
 .bio {
@@ -16,12 +33,49 @@
   font-family: var(--portfolio-font);
   font-size: 24px;
   font-weight: 200;
-  width: 400px;
-  margin: 20px;
+  width: 600px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 80px;
+  white-space: pre-wrap;
+  letter-spacing: 0.8px;
+}
+
+.allPhotos {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
 }
 
 .photo {
-  height: 500px;
-  border-radius: 20px;
-  margin: 20px;
+  border-radius: 15px;
+  border: solid 4px var(--text-color);
+}
+
+#0 {
+  height: 380px;
+  width: 600px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#1 {
+  position: absolute;
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  left: -150px;
+  bottom: 137px;
+  z-index: 0;
+}
+
+#2 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin-top: 130px;
+  left: -320px;
+  z-index: -1;
 }
