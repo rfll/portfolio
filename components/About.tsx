@@ -9,6 +9,8 @@ export default function About() {
   const [ref, inView] = useInView({
     threshold: 0.6,
   });
+
+  const bioTitle = portfolio.bioTitle;
   const bio = portfolio.bio;
   const photo = portfolio.photo;
 
@@ -17,7 +19,19 @@ export default function About() {
   return (
     <div className={styles.about} ref={ref}>
       <div className={styles.photoBioContainer}>
-        <img className={styles.photo} src={photo} alt="photo" />
+        <h1 className={styles.bioTitle}>{bioTitle}</h1>
+        <div className={styles.allPhotos}>
+          {photo.map((photos: any, index: number) => {
+            return (
+              <img
+                className={styles.photo}
+                id={styles[index]}
+                src={photos}
+                alt="photo"
+              />
+            );
+          })}
+        </div>
         <p className={styles.bio}>{bio}</p>
       </div>
     </div>
