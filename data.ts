@@ -74,8 +74,9 @@ const portfolio: Portfolio = {
       screenshots: ["wikiMapsDocs/wiki-maps.png"],
     },
   ],
+  bioTitle: "Hello, World.",
   bio:
-    "Full-Stack Web Developer with over 10 years of experience in project management. Looking to combine my passion for programming with skills in problem solving, creative thinking, collaboration, and communication.",
+    "Full-Stack Web Developer with a strong foundation in project management and problem-solving.\n\nWith a successful 10-year career in facilities project management at Simon Fraser University, I have extensive experience in managing large construction projects and assuming various leadership roles.\n\nBeyond coding, I enjoy playing the guitar, travelling, following basketball, and striving to find the best americano. Above all, I find great joy in spending quality time with my family, friends, and loyal dog.",
   descriptions: [
     "Web Developer.",
     "Coffee Lover.",
@@ -87,7 +88,7 @@ const portfolio: Portfolio = {
     ContactMethods.LINKEDIN,
     ContactMethods.EMAIL,
   ],
-  photo: "/profile.jpg"
+  photo: ["/profile.jpg", "/profile2.jpg", "/profile3.jpg"],
 };
 
 export default portfolio;
