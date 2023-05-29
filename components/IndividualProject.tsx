@@ -13,7 +13,7 @@ export default function IndividualProject(props: ProjectProps) {
   const [expand, setExpand] = useState(false);
   const [ref, inView] = useInView({
     threshold: 0,
-    rootMargin: "-50% 0% -50% 0%"
+    rootMargin: "-30% 0% -70% 0%"
   })
 
   return (
