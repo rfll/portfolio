@@ -37,7 +37,7 @@ export default function IndividualProject(props: ProjectProps) {
             <div className={styles.about}>{props.project.about}</div>
             <div className={styles.techStack}>
               {props.project.technologies.map((tech) => (
-                <TechnologyRow technology={tech} />
+                <TechnologyRow technology={tech} key={tech} />
               ))}
             </div>
           </div>
