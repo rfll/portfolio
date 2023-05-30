@@ -28,6 +28,7 @@ export default function About() {
                 id={styles[index]}
                 src={photos}
                 alt="photo"
+                key={index}
               />
             );
           })}
