@@ -24,7 +24,7 @@ export default function Projects() {
 
   useEffect(() => {
     inView && setSelected("projects");
-  }, []);
+  }, [inView, setSelected]);
 
   return (
     <div className={styles.projectList} ref={ref} id="projectList">
