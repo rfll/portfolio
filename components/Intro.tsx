@@ -13,7 +13,7 @@ export default function Intro() {
 
   useEffect(() => {
     inView && setSelected("off");
-  }, []);
+  }, [inView, setSelected]);
 
   return (
     <main className={styles.main} ref={ref}>
