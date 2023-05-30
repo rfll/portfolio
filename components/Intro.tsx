@@ -1,17 +1,19 @@
 import styles from "@/styles/Intro.module.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { portfolioContext } from "@/providers/PortfolioProvider";
 import { useInView } from "react-intersection-observer";
 
 export default function Intro() {
-  const { activeClass, index, phraseArray, setSelected } = useContext(
+  const { activeClass, index, phraseArray, setSelected, selected } = useContext(
     portfolioContext
   );
   const [ref, inView] = useInView({
     threshold: 0.6,
   });
 
-  inView && setSelected("off");
+  useEffect(() => {
+    inView && setSelected("off");
+  }, []);
 
   return (
     <main className={styles.main} ref={ref}>
