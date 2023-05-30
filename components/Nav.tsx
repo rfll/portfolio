@@ -52,7 +52,12 @@ export default function Nav() {
       </div>
       <div className={styles.rightNav}>
         {contactMethods.map((contactMethods) => {
-          return <NavContactMethods contactMethods={contactMethods} />;
+          return (
+            <NavContactMethods
+              contactMethods={contactMethods}
+              key={contactMethods}
+            />
+          );
         })}
       </div>
     </div>
