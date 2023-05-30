@@ -58,6 +58,7 @@ export default function IndividualProject(props: ProjectProps) {
                       className={styles.projectScreenshot}
                       src={screenshot}
                       alt="image"
+                      key={screenshot}
                     />
                   );
                 })}
