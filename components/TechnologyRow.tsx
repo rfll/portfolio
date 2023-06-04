@@ -13,6 +13,8 @@ const technologiesToImagesMapping = {
   [Technologies.POSTGRESQL]: "techImages/PostgreSQL.svg",
   [Technologies.AXIOS]: "techImages/axios.png",
   [Technologies.JAVASCRIPT]: "techImages/JavaScript.svg",
+  [Technologies.TYPESCRIPT]: "techImages/TypeScript.svg",
+  [Technologies.NEXT_JS]: "techImages/NextJS.svg",
 };
 
 const technologiesToNamesMapping = {
@@ -23,6 +25,8 @@ const technologiesToNamesMapping = {
   [Technologies.POSTGRESQL]: "PostgreSQL",
   [Technologies.AXIOS]: "Axios",
   [Technologies.JAVASCRIPT]: "JavaScript",
+  [Technologies.TYPESCRIPT]: "TypeScript",
+  [Technologies.NEXT_JS]: "NextJS",
 };
 
 export default function TechnologyRow(props: TechnologyRowProps) {
