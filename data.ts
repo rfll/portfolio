@@ -28,13 +28,13 @@ const portfolio: Portfolio = {
         Technologies.REACT_JS,
       ],
       about: "This portfolio was created using the serverless functionality of Next.js and Typescript.",
-      image: "portfolioDocs/landing.png",
+      image: "portfolioDocs/Landing.png",
       video: null,
       screenshots: [
-        "portfolioDocs/landing.png",
-        "portfolioDocs/projects.png",
-        "portfolioDocs/about.png",
-        "portfolioDocs/projectOpen.png",
+        "portfolioDocs/Landing.png",
+        "portfolioDocs/Projects.png",
+        "portfolioDocs/About.png",
+        "portfolioDocs/ProjectOpen.png",
       ],
     },
     {
