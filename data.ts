@@ -14,10 +14,28 @@ const portfolio: Portfolio = {
         Technologies.NODE_JS,
       ],
       about:
-        "Drafted provides basketball fans with a comprehensive resource to identify and rank their favorite players leading up to the NBA Draft. Users will have access to a database of hundreds of players, player stats, and scouting videos to assist.",
+        "Drafted provides basketball fans with a comprehensive resource to identify and rank their favorite players leading up to the NBA Draft. Users will have access to a database of hundreds of players, player stats, and scouting videos to learn more.",
       image: "draftedDocs/drafted.png",
       video: "draftedDocs/Drafted App Demo.mp4",
       screenshots: [],
+    },
+    {
+      projectName: "Portfolio",
+      url: "https://github.com/rfll/portfolio",
+      technologies: [
+        Technologies.TYPESCRIPT,
+        Technologies.NEXT_JS,
+        Technologies.REACT_JS,
+      ],
+      about: "This portfolio was created using the serverless functionality of Next.js and Typescript.",
+      image: "portfolioDocs/landing.png",
+      video: null,
+      screenshots: [
+        "portfolioDocs/landing.png",
+        "portfolioDocs/projects.png",
+        "portfolioDocs/about.png",
+        "portfolioDocs/projectOpen.png",
+      ],
     },
     {
       projectName: "Parrot Perch",
@@ -57,21 +75,6 @@ const portfolio: Portfolio = {
         "schedulerDocs/deleteScheduler.png",
         "schedulerDocs/scheduler.png",
       ],
-    },
-    {
-      projectName: "Wiki-Maps",
-      url: "https://github.com/rfll/wiki-maps",
-      technologies: [
-        Technologies.POSTGRESQL,
-        Technologies.EXPRESS_JS,
-        Technologies.JAVASCRIPT,
-        Technologies.NODE_JS,
-      ],
-      about:
-        "A web app that allows users to create and save maps to display points of interest.",
-      image: "wikiMapsDocs/wiki-maps.png",
-      video: null,
-      screenshots: ["wikiMapsDocs/wiki-maps.png"],
     },
   ],
   bioTitle: "Hello, World.",
