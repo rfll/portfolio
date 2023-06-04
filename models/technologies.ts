@@ -6,6 +6,8 @@ enum Technologies {
   POSTGRESQL = "POSTGRESQL",
   AXIOS = "AXIOS",
   JAVASCRIPT = "JAVASCRIPT",
+  TYPESCRIPT = "TYPESCRIPT",
+  NEXT_JS = "NEXT_JS",
 }
 
 export default Technologies;
