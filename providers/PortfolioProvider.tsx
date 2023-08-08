@@ -56,6 +56,8 @@ export default function PortfolioProvider({ children }: Props) {
       clearTimeout(fadeTimer);
       return;
     }
+
+    return () => clearTimeout(fadeTimer);
   }, [activeClass]);
 
   useEffect(() => {
@@ -68,6 +70,8 @@ export default function PortfolioProvider({ children }: Props) {
       clearTimeout(arrayTimer);
       return;
     }
+
+    return () => clearTimeout(arrayTimer);
   }, [index]);
 
   const portfolioProps = {
