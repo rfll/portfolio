@@ -7,6 +7,7 @@ export default function Intro() {
   const { activeClass, index, phraseArray, setSelected, selected } = useContext(
     portfolioContext
   );
+
   const [ref, inView] = useInView({
     threshold: 0.6,
   });
@@ -18,8 +19,7 @@ export default function Intro() {
   return (
     <main className={styles.main} ref={ref}>
       <div className={styles.profile}>
-        <div className={styles.name}></div>
-        <div className={styles[activeClass.fade]}>{phraseArray[index]}</div>
+        <div role="fadeText" className={styles[activeClass.fade]}>{phraseArray[index]}</div>
       </div>
     </main>
   );
