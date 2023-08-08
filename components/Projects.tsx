@@ -12,7 +12,7 @@ export default function Projects() {
   let threshold;
   if (typeof document !== "undefined") {
     let elem = document.getElementById("projectList") as HTMLInputElement;
-    let elemHeight = elem.getBoundingClientRect().height;
+    let elemHeight = elem?.getBoundingClientRect().height;
     threshold =
       ((window.innerHeight * thresholdBaseline) / elemHeight) *
       thresholdBaseline;
