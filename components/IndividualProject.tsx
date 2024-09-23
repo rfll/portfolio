@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useRef } from "react";
 import styles from "@/styles/Projects.module.css";
 import IndividualButton from "./IndividualButton";
 import TechnologyRow from "./TechnologyRow";
@@ -11,10 +11,14 @@ type ProjectProps = {
 
 export default function IndividualProject(props: ProjectProps) {
   const [expand, setExpand] = useState(false);
-  const [ref, inView] = useInView({
+  const {ref, inView} = useInView({
     threshold: 0,
     rootMargin: "-30% 0% -70% 0%",
   });
+
+  if (!props.project) {
+    return null;
+  }
 
   return (
     <div

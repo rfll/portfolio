@@ -2,7 +2,6 @@ import { render, screen} from "@testing-library/react";
 import Intro from "@/components/Intro";
 import "@testing-library/jest-dom";
 import "intersection-observer";
-import { act } from "react-dom/test-utils";
 
 describe("Intro component", () => {
 

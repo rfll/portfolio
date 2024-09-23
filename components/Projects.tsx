@@ -17,7 +17,7 @@ export default function Projects() {
       ((window.innerHeight * thresholdBaseline) / elemHeight) *
       thresholdBaseline;
   }
-  const [ref, inView] = useInView({
+  const {ref, inView} = useInView({
     threshold: threshold,
   });
   const projects = portfolio.projects;
